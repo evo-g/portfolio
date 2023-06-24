@@ -1,0 +1,132 @@
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 1rem 0;
+  padding: 0 1.5rem;
+  max-width: 1100px;
+}
+
+.timeline-container::after {
+  background-color: #e17b77;
+  content: '';
+  position: absolute;
+  left: calc(50% - 1px);
+  width: 4px;
+  height: 101%;
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 3px;
+  position: relative;
+  width: 100%;
+  margin: 1rem 0;
+  z-index: 10;
+}
+
+/* .timeline-item:nth-child(odd) {
+  align-self: flex-end;
+  justify-content: flex-start;
+  padding-left: 3px;
+  padding-right: 0;
+} */
+
+.timeline-item-content {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 15px;
+  position: relative;
+  text-align: right;
+  width: 100%;
+}
+
+.timeline-item-content::after {
+  content: ' ';
+  background-color: #fff;
+  box-shadow: 1px -1px 1px rgb(0 0 0 / 20%);
+  position: absolute;
+  right: calc(50% - 10px);
+  bottom: -7px;
+  transform: rotate(132deg);
+  width: 15px;
+  height: 15px;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content {
+  text-align: left;
+  align-items: flex-start;
+}
+
+.timeline-item-content .tag {
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  top: 15px;
+  left: 15px;
+  letter-spacing: 1px;
+  padding: 5px;
+  position: absolute;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content .tag {
+  left: auto;
+  right: 15px;
+}
+
+.timeline-item-content time {
+  color: #777;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.timeline-item-content p {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 15px 0;
+  max-width: 95%;
+}
+
+.timeline-item-content a {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.timeline-item-content a::after {
+  content: ' ►';
+  font-size: 12px;
+}
+
+.tech, .tech-education {
+  background-color: var(--cool-blue);
+}
+
+.education {
+  background-color: var(--teal);
+}
+
+.work-automotive {
+  background-color: var(--hot-pink);
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content .circle {
+  right: auto;
+  left: -40px;
+}
+
+br {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  br {
+    display: block;
+  }
+}

@@ -1,0 +1,481 @@
+:root {
+  --white: #FFFFFF;
+  --opal: #A6BDB9;
+  --rasin-black: #242424;
+  --border-radius: 1.1rem;
+  --light-gray: #E0E0E0;
+  --medium-gray: #808080;
+  --hot-pink: #FC2683;
+  --teal: #5FD3BB;
+  --cool-blue: #00a7e0;
+  --bus-green: #6BD425;
+  --btn-padding: 1rem .8rem;
+  --flex: flex;
+  --flex-row: row;
+  --flex-column: column;
+}
+/* needs so much css work honestly not even sure if I am in good starting point
+  but for now working on the nav
+  the headings need help color gradient might be too much
+  overall trying to reduce the amount of css used 
+ */
+
+html {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+}
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  word-wrap: break-word;
+  font-size: 17px;
+  line-height: 1.5;
+  background: var(--white);
+  font-weight: 500;
+}
+
+main {
+  /* height: 100dvh; */
+  width: 100%;
+}
+
+.container {
+  margin: 0px auto;
+  display: var(--flex);
+  flex-direction: var(--flex-column);
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: var(--flex);
+  flex-direction: var(--flex-column);
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* site-section */
+
+.btn.btn-link {
+  padding: var(--btn-padding);
+  border: .3rem solid var(--teal);
+  border-radius: var(--border-radius);
+}
+
+.grid-row {
+  display: grid;
+  grid-gap: 3rem;
+  padding: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+}
+
+.projects-section {
+  background-color: var(--light-gray);
+  padding: 2rem 1rem;
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+
+.btn {
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--hot-pink);
+  padding: 1rem .8rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 0.6;
+  transition: 0.1s ease all;
+}
+
+.to-right {
+  display: block;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  margin-top: 3rem;
+}
+
+/*About*/
+
+#about {
+  /* margin: 0 0 2rem; */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  line-height: 30px;
+  font-size: 17px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  color: #777;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-intro h3 {
+  background-color: inherit;
+  text-align: center;
+  color: #0024aa;
+  padding: .5rem;
+  
+}
+
+.about-intro {
+  display: var(--flex);
+  padding: 1rem;
+  color: #000000;
+  font-weight: 400;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about-intro p {
+  color: #373736;
+  padding: 1rem;
+  text-align: center;
+  width: 85vw;
+}
+
+.in-touch {
+  display: var(--flex);
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.in-touch a img {
+  height: 4rem;
+  border-radius: 20%;
+}
+
+.fab .fa-linkedin {
+  height: 4rem;
+  border-radius: 20%;
+}
+
+.bigger {
+  transform: scale(1.1);
+}
+
+.in-touch a img:hover {
+  transition: 0.3s ease all;
+  height: 3.5rem;
+}
+
+/* connect */
+
+.connect {
+  display: var(--flex);
+  flex-direction: var(--flex-column);
+  text-align: center;
+}
+
+.icon {
+  font-size: 5rem;
+  color: #000000;
+}
+
+.icon:hover {
+  transition: 0.3s ease all;
+  transform: scale(1.1);
+}
+
+.fa-linkedin:hover {
+  color: #00a7e0;
+}
+
+.taller {
+  display: var(--flex);
+  flex-direction: var(--flex-column);
+  justify-content: center;
+  align-items: center;
+}
+
+.taller h2 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #777;
+  display: flex;
+  justify-content: center;
+}
+
+.second {
+  margin-top: 2rem;
+}
+.center-form {
+  display: var(--flex);
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.active {
+  display: block;
+}
+
+/* default page */
+.default {
+  display: var(--flex);
+  flex-direction: var(--flex-column);
+  justify-content: center;
+  align-items: center;
+}
+
+#default a:visited {
+  color: initial;
+  color: #00a7e0;
+}
+
+#default img {
+  object-fit: cover;
+  width: 25rem;
+  margin: 5rem;
+}
+
+/* desktop nav */
+.desk-nav {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 1rem;
+  list-style-type: none;
+  justify-content: space-evenly;
+  background:
+  linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+  linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+  linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+  linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+  linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+  linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, var(--rasin-black) 75%, var(--rasin-black));
+  background-color: #131313;
+  background-size: 20px 20px;
+  z-index: 99;
+  width: 100%;
+}
+
+.fa-times {
+  display: none;
+}
+
+.desk-nav li {
+  font-size: 1.1em;
+  min-height: 50px;
+  padding: .5rem;
+  text-decoration: none;
+}
+
+.desk-nav li a:visited {
+  color: initial;
+  color: #00a7e0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.desk-nav li {
+  display: var(--flex);
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.desk-nav li a {
+  color: var(--cool-blue);
+  padding: .8rem 1.6rem;
+}
+ul li a:hover {
+  background: #444;
+  border-radius: .3rem;
+  white-space: nowrap;
+}
+
+/* mobile nav helpers */
+
+.navbar-toggle {
+  transition: ease;
+}
+
+.fas.fa-bars {
+  display: none;
+}
+
+/* loader */
+#loader {
+  border: 1.6rem solid #000000;
+  border-radius: 50%;
+  border-top: 1.6rem solid #56a5eb;
+  width: 12rem;
+  height: 12rem;
+  animation: spin 2s linear infinite;
+  margin: 40px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    padding: 1rem;
+  }
+}
+
+/* figure out the toggle with state and make a function to display stuff think vstda */
+@media screen and (max-width: 700px) {
+  .fas {
+    display: block;
+    z-index: 399;
+  }
+  .fas.fa-bars {
+    display: block;
+    position: fixed;
+  }
+
+  .desk-nav {
+    height: 65px;
+  }
+
+  .desk-nav li  {
+    display: none;
+  }
+
+  .fa-window-close {
+    display: block;
+    position: fixed;
+    color: var(--cool-blue);
+  }
+
+  .top-nav {
+    display: var(--flex);
+    flex-direction: var(--flex-column);
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    z-index: 199;
+    text-align: center;
+    padding: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+    background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, var(--rasin-black) 75%, var(--rasin-black));
+    background-color: #131313;
+    background-size: 20px 20px;
+    animation: slideIn 0.3s ease-in-out;
+  }
+  
+  .top-nav li {
+  font-size: 1.1em;
+  min-height: 50px;
+  padding: .5rem;
+  text-decoration: none;
+  }
+
+  .top-nav li {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+  }
+
+  .top-nav li a {
+    text-decoration: none;
+    color: #00a7e0;
+    padding: 8px 16px;
+  }
+
+  .top-nav li a:visited {
+    color: initial;
+    color: #00a7e0;
+  }
+
+  .top-nav li a:hover {
+    background: #444;
+    border-radius: 3px;
+    white-space: nowrap;
+  }
+  .project {
+    margin: 5px;
+  }
+}
+
+/* fix smaller screen sizes iphone 5 */
+.footer-content {
+  background-color: #131313;
+  position: relative;
+  display: var(--flex);
+  justify-content: center;
+  flex-direction: row;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  bottom: 0;
+}
+
+.footer-content img {
+  display: flex;
+  border-radius: 15px;
+  height: 3.5rem;
+  width: 3.5rem;
+  margin: 1rem;
+}
+
+.column-break {
+  display: flex;
+  flex-direction: column;
+}
+
+.loading {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.loading .loader {
+  border: 1.6rem solid #000000;
+  border-radius: 50%;
+  border-top: 1.6rem solid #56a5eb;
+  width: 12rem;
+  height: 12rem;
+  animation: spin 2s linear infinite;
+  margin: 40px;
+}

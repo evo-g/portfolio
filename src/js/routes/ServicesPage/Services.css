@@ -1,0 +1,48 @@
+#services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.services h2 {
+  text-align: center;
+  color: #01579B;
+  border-bottom: 1px solid #212121;
+}
+
+.services ul {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+.service-card {
+  margin: 2rem;
+  background-color: #01579B;
+  color: #fff;
+  padding: 1rem 5rem;
+  border-radius: .3rem;
+  box-shadow: 1px 1px 1px #212121;
+}
+
+.card-1 {
+  background-color: #0288D1;
+}
+
+.card-2 {
+  background-color: #29B6F6;
+  color: #111111;
+}

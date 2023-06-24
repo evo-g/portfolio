@@ -1,0 +1,10 @@
+.fas {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  color: var(--cool-blue);
+  font-size: 24px;
+  display: none;
+  z-index: 199;
+}
