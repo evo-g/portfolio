@@ -20,13 +20,13 @@ h3 {
   background-color: #fafafa;
   padding: 1rem;
   margin: .5rem;
-  border-radius: 8px;
+  border-radius: var(--border-radius);
   align-items: center;
   box-shadow: 1px 1px 1px #F5F5F5;
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 4rem;
 }
 
 .project:hover {
@@ -49,7 +49,7 @@ h3 {
 
 .project-info {
   padding: .5rem;
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   display: flex;
   flex-direction: column;
   max-height: 12rem;
@@ -65,6 +65,7 @@ h3 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  letter-spacing: 1px;
 }
 .project-info p {
   color: #616161;
@@ -77,6 +78,6 @@ h3 {
   object-fit: cover;
   display: block;
   width: min(100%, 25rem);
-  border-radius: 8px;
+  border-radius: var(--border-radius);
   margin: 1rem auto 0;
 }

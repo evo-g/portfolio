@@ -15,6 +15,7 @@
   background-color: var(--hot-pink);
   padding: 1rem 2rem 0;
   opacity: .8;
+  margin: .5rem 0 0;
 }
 
 .tab-container li:first-child h2 {

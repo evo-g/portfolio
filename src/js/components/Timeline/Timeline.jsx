@@ -32,7 +32,7 @@ const TimelineItem = ({ data }) => (
           href={data.contact}
           target='_blank'
           rel='noopener'
-          className='btn'
+          className='btn btn-link'
         >
           Learn More
         </a>

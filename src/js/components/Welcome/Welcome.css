@@ -14,7 +14,7 @@
 }
 
 .card-child strong {
-  color: var(--teal);
+  color: var(--royal-blue);
   /* filter: drop-shadow(1px 1px 1px var(--teal)); */
 }
 

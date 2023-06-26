@@ -25,7 +25,7 @@ const Footer = () => {
         <a href='/'><img src={Profile} alt='my avatar/home page' /></a>
         <div className='column-break'>
           <span>My Portfolio</span>
-          <span>&copy; 2018</span>
+          <span>&copy; 2023</span>
         </div>
       </section>
     </footer>

@@ -7,6 +7,7 @@
   --medium-gray: #808080;
   --hot-pink: #FC2683;
   --teal: #5FD3BB;
+  --royal-blue: #0024aa;
   --cool-blue: #00a7e0;
   --bus-green: #6BD425;
   --btn-padding: 1rem .8rem;
@@ -120,7 +121,7 @@ body {
 .about-intro h3 {
   background-color: inherit;
   text-align: center;
-  color: #0024aa;
+  color: var(--royal-blue);
   padding: .5rem;
   
 }
@@ -138,26 +139,24 @@ body {
 }
 
 .about-intro p {
-  color: #373736;
+  color: var(--rasin-black);
   padding: 1rem;
   text-align: center;
-  width: 85vw;
 }
 
 .in-touch {
   display: var(--flex);
   justify-content: space-evenly;
   padding: 10px;
+  border-radius: 20%;
 }
 
 .in-touch a img {
   height: 4rem;
-  border-radius: 20%;
 }
 
 .fab .fa-linkedin {
   height: 4rem;
-  border-radius: 20%;
 }
 
 .bigger {
@@ -188,7 +187,7 @@ body {
 }
 
 .fa-linkedin:hover {
-  color: #00a7e0;
+  color: var(--cool-blue);
 }
 
 .second {
@@ -215,8 +214,7 @@ body {
 }
 
 #default a:visited {
-  color: initial;
-  color: #00a7e0;
+  color: var(--cool-blue);
 }
 
 #default img {
@@ -243,6 +241,7 @@ body {
   linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, var(--rasin-black) 75%, var(--rasin-black));
   background-color: #131313;
   background-size: 20px 20px;
+  opacity: .93;
   z-index: 99;
   width: 100%;
 }
@@ -259,8 +258,7 @@ body {
 }
 
 .desk-nav li a:visited {
-  color: initial;
-  color: #00a7e0;
+  color: var(--teal);
 }
 
 a {
@@ -279,7 +277,7 @@ a {
 }
 ul li a:hover {
   background: #444;
-  border-radius: .3rem;
+  border-radius: var(--border-radius);
   white-space: nowrap;
 }
 
@@ -298,7 +296,7 @@ ul li a:hover {
   top: 2rem;
   right: 2rem;
   cursor: pointer;
-  color: var(--cool-blue);
+  color: var(--teal);
   font-size: 24px;
   display: none;
   z-index: 199;
@@ -364,7 +362,6 @@ ul li a:hover {
   .fa-window-close {
     display: block;
     position: fixed;
-    color: var(--cool-blue);
   }
 
   .top-nav {
@@ -409,18 +406,17 @@ ul li a:hover {
 
   .top-nav li a {
     text-decoration: none;
-    color: #00a7e0;
+    color: var(--teal);
     padding: 8px 16px;
   }
 
   .top-nav li a:visited {
-    color: initial;
-    color: #00a7e0;
+    color: var(--teal);
   }
 
   .top-nav li a:hover {
     background: #444;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
     white-space: nowrap;
   }
   .project {

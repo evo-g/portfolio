@@ -4,7 +4,7 @@
   position: relative;
   margin: 1rem auto;
   padding: 0 1.5rem;
-  max-width: 1100px;
+  max-width: 1200px;
 }
 
 .timeline-container::after {
@@ -35,7 +35,7 @@
 
 .timeline-item-content {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -70,10 +70,10 @@
   top: 15px;
   left: 15px;
   letter-spacing: 1px;
-  padding: 5px;
+  padding: .8rem;
   position: absolute;
   text-transform: uppercase;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
 }
 
 .timeline-item:nth-child(odd) .timeline-item-content .tag {
