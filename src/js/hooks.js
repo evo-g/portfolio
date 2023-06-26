@@ -8,6 +8,10 @@ export const useOnClickOutside = (ref, handler) => {
       }
       handler(event);
     };
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
     document.addEventListener('mousedown', listener);
     return () => {
       document.addEventListener('mousedown', listener);
