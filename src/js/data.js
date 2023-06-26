@@ -231,5 +231,12 @@ export const familiarServices = [
     img: null,
     alt: 'The Open CLI Framework',
     experience: '1 month'
+  },
+  {
+    id: 8,
+    title: 'Vite.js',
+    img: null,
+    alt: 'Vite.js',
+    experience: 'Actively learning'
   }
 ]
