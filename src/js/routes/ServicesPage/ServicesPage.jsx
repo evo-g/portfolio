@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { mainTechnologies, familiarServices, servicesMedium } from '../../data';
 import './Services.css';
 
 const mainTech = mainTechnologies.map(service => {
   return (
     <li key={service.id}>
-      <div className='service-card card-1'>
+      <div className='service-card'>
         <h3>{service.title}</h3>
         <p>Amount of Experience: {service.experience}</p>
       </div>
@@ -16,7 +16,7 @@ const mainTech = mainTechnologies.map(service => {
 const mediumTech = servicesMedium.map(service => {
   return (
     <li key={service.id}>
-      <div className='service-card card-2'>
+      <div className='service-card'>
         <h3>{service.title}</h3>
         <p>Amount of Experience: {service.experience}</p>
       </div>
@@ -27,7 +27,7 @@ const mediumTech = servicesMedium.map(service => {
 const familiarTech = familiarServices.map(service => {
   return (
     <li key={service.id}>
-      <div className='service-card card-3'>
+      <div className='service-card'>
         <h3>{service.title}</h3>
         <p>Amount of Experience: {service.experience}</p>
       </div>
@@ -35,22 +35,41 @@ const familiarTech = familiarServices.map(service => {
   );
 });
 
-const ServicePage = () => {
+function ServicePage() {
+  const [active, setActive] = useState(1);
+
+  function setActiveTab(id) {
+    setActive(id);
+  }
+
   return (
-    <section className="page-container" id="services">
-      <div className='services'>
-      <h2>Core Technologies</h2>
-      <ul>{mainTech}</ul>
+    <div className="page-container" id="services">
+      <div className='tab-container'>
+        <ul className='tab-nav'>
+          <li className={`${active === 1 ? 'active' : ''} tabs`} onClick={() => setActiveTab(1)}>
+            <h2>Core Technologies</h2>
+
+          </li>
+          <li className={`${active === 2 ? 'active' : ''} tabs`} onClick={() => setActiveTab(2)}>
+            <h2>Comfortable working with</h2>
+
+          </li>
+          <li className={`${active === 3 ? 'active' : ''} tabs`} onClick={() => setActiveTab(3)}>
+            <h2>Familiar Technologies and Expoloring</h2>
+
+          </li>
+        </ul>
+        <div className={`${active === 1 ? 'active' : ''} content`}>
+          <ul>{mainTech}</ul>
+        </div>
+        <div className={`${active === 2 ? 'active' : ''} content`}>
+          <ul>{mediumTech}</ul>
+        </div>
+        <div className={`${active === 3 ? 'active' : ''} content`}>
+          <ul>{familiarTech}</ul>
+        </div>
       </div>
-      <div className='services'>
-      <h2>Comfortable working with</h2>
-      <ul>{mediumTech}</ul>
-      </div>
-      <div className='services'>
-      <h2>Familiar Technologies and Expoloring</h2>
-      <ul>{familiarTech}</ul>
-      </div>
-    </section>
+    </div>
   )
 }
 

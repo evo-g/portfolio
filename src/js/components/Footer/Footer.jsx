@@ -4,7 +4,7 @@ import Profile from '../../../assets/profile.jpg';
 
 const Footer = () => {
   return (
-    <Fragment>
+    <footer>
       <section className='connect'>
         <div className='end'>
           <h3>Get in Touch With Me</h3>
@@ -21,14 +21,14 @@ const Footer = () => {
           </Link>
         </div>
       </section>
-      <section class='footer-content'>
+      <section className='footer-content'>
         <a href='/'><img src={Profile} alt='my avatar/home page' /></a>
         <div className='column-break'>
           <span>My Portfolio</span>
           <span>&copy; 2018</span>
         </div>
       </section>
-    </Fragment>
+    </footer>
   )
 }
 

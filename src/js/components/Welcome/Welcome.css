@@ -15,7 +15,7 @@
 
 .card-child strong {
   color: var(--teal);
-  filter: drop-shadow(1px 1px 1px var(--teal));
+  /* filter: drop-shadow(1px 1px 1px var(--teal)); */
 }
 
 .card-child img {

@@ -33,15 +33,11 @@ body {
   margin: 0 auto;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   word-wrap: break-word;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.5;
   background: var(--white);
   font-weight: 500;
-}
 
-main {
-  /* height: 100dvh; */
-  width: 100%;
 }
 
 .container {
@@ -55,8 +51,8 @@ main {
   margin: 0 auto;
   display: var(--flex);
   flex-direction: var(--flex-column);
-  justify-content: center;
   padding: 1rem;
+  
 }
 
 /* site-section */
@@ -192,23 +188,6 @@ main {
 
 .fa-linkedin:hover {
   color: #00a7e0;
-}
-
-.taller {
-  display: var(--flex);
-  flex-direction: var(--flex-column);
-  justify-content: center;
-  align-items: center;
-}
-
-.taller h2 {
-  font-size: 30px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-weight: 300;
-  color: #777;
-  display: flex;
-  justify-content: center;
 }
 
 .second {
