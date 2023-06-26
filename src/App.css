@@ -362,7 +362,7 @@ ul li a:hover {
     height: 100vh;
     z-index: 199;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem 2rem 3rem;
     position: fixed;
     top: 0;
     left: 0;

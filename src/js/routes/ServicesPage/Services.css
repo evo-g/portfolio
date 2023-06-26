@@ -34,7 +34,7 @@
   cursor: pointer;
 }
 .active.tabs h2 {
-	border-bottom: .5rem solid green;
+	border-bottom: .5rem solid var(--bus-green);
 	background-color: #fff;
 	color: #000;
 }

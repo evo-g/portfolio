@@ -48,15 +48,12 @@ function ServicePage() {
         <ul className='tab-nav'>
           <li className={`${active === 1 ? 'active' : ''} tabs`} onClick={() => setActiveTab(1)}>
             <h2>Core Technologies</h2>
-
           </li>
           <li className={`${active === 2 ? 'active' : ''} tabs`} onClick={() => setActiveTab(2)}>
             <h2>Comfortable working with</h2>
-
           </li>
           <li className={`${active === 3 ? 'active' : ''} tabs`} onClick={() => setActiveTab(3)}>
             <h2>Familiar Technologies and Expoloring</h2>
-
           </li>
         </ul>
         <div className={`${active === 1 ? 'active' : ''} content`}>
