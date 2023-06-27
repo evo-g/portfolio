@@ -53,7 +53,7 @@ body {
   display: var(--flex);
   flex-direction: var(--flex-column);
   padding: 1rem;
-  
+  min-height: 72dvh;
 }
 
 /* site-section */
@@ -421,6 +421,12 @@ ul li a:hover {
   }
   .project {
     margin: 5px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .grid-row {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   }
 }
 
