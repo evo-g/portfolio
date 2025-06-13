@@ -258,9 +258,9 @@ body {
   text-decoration: none;
 }
 
-.desk-nav li a:visited {
+/* .desk-nav li a:visited {
   color: var(--teal);
-}
+} */
 
 a {
   text-decoration: none;

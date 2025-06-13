@@ -94,7 +94,7 @@ export const mainTechnologies = [
     id: 11,
     title: 'Netlify',
     alt: 'netlify',
-    experience: '3 years'
+    experience: findStartDate('2020-08-13')
   },
   {
     id: 12,
@@ -106,14 +106,35 @@ export const mainTechnologies = [
     id: 13,
     title: 'Git',
     alt: 'git',
-    experience: '4 years'
+    experience: findStartDate('2018-03-01')
   },
   {
     id: 14,
     title: 'ServiceNow',
     img: null,
     alt: 'service now platform',
-    experience: '2 years'
+    experience: findStartDate('2021-05-28')
+  },
+  {
+    id: 15,
+    title: 'Service Portal',
+    img: null,
+    alt: 'service portal on now platform',
+    experience: findStartDate('2021-05-28')
+  },
+  {
+    id: 16,
+    title: 'Angular.js',
+    img: null,
+    alt: 'angualrjs',
+    experience: findStartDate('2021-05-28')
+  },
+  {
+    id: 17,
+    title: 'Vite',
+    img: null,
+    alt: 'vite',
+    experience: findStartDate('2022-04-28')
   },
 ];
 

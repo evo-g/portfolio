@@ -45,18 +45,25 @@ const TimelineItem = ({ data }) => (
 function Timeline() {
   const { data: { histories = [] } = {}, loading, error } = useQuery(
     GET_HISTORY,
-    {
-      fetchPolicy: 'network-only'
-    }
-  )
+    { fetchPolicy: 'network-only' }
+  );
 
-  if (loading) {
-    return <Loading />;
-  }
+  const parseEndDate = (range) => {
+    if (!range) return new Date(0);
+    const parts = range.split('to').map(part => part.trim());
+    const end = parts[1] || parts[0];
+    return new Date(`01 ${end}`);
+  };
 
-  return histories.length > 0 && (
+  const sortedHistories = [...histories].sort((a, b) =>
+    parseEndDate(b.dateRange) - parseEndDate(a.dateRange)
+  );
+
+  if (loading) return <Loading />;
+
+  return sortedHistories.length > 0 && (
     <div className='timeline-container'>
-      {histories.map((data, idx) => (
+      {sortedHistories.map((data, idx) => (
         <TimelineItem data={data} key={idx} />
       ))}
     </div>
