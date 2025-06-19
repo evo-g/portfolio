@@ -79,7 +79,7 @@
   font-size: 1.3rem;
 }
 
-@media screen and (max-width: 775px) {
+@media screen and (max-width: 48.6875em) {
   .tab-nav {
     flex-direction: column;
   }
@@ -94,7 +94,7 @@
     border: .3rem solid var(--hot-pink);
   }
   .active.tabs h2 {
-    border: .3rem solid var(--teal);
-    transition: 3ms ease-in;
+    /* border: .3rem solid var(--teal); */
+    transition: border 0.3s ease-in;
   }
 }

@@ -23,7 +23,7 @@ const Welcome = () => {
           <strong> {professionalYears} years</strong> professionally, along with several years of experience as an automotive mechanic. 
           You can check out some projects below, or click on the link to find out more about my journey. 
           A little bit of context on my site — I created it using React and GraphQL to pull in my projects and history. 
-          CSS needs some polishing. Also I enjoy a good margarita!
+          CSS needs some polishing.
         </p>
         <div className="button-container">
           <Link className='btn btn-link' to="/about">Learn More</Link>

@@ -9,11 +9,10 @@ function HomePage() {
     <>
     <Welcome />
     <section className="page-container">
-    <h2 className='projects-h2'>Projects</h2>
-    <div className='grid-row projects-section'>
-    <Projects />
-    </div>
-    <h3>More Coming Soon</h3>
+      <h2 className='projects-h2'>Projects</h2>
+      <div className='grid-row projects-section'>
+        <Projects />
+      </div>
     </section>
     </>
   )

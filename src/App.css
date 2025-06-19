@@ -2,9 +2,11 @@
   --white: #FFFFFF;
   --opal: #A6BDB9;
   --rasin-black: #242424;
-  --border-radius: 1.1rem;
+  --secondary-black: #171717;
+  --dark-black: #000000;
+  --border-radius: .8rem;
   --light-gray: #E0E0E0;
-  --medium-gray: #808080;
+  --medium-gray: #EDEDED;
   --hot-pink: #FC2683;
   --teal: #5FD3BB;
   --royal-blue: #0024aa;
@@ -14,7 +16,9 @@
   --flex: flex;
   --flex-row: row;
   --flex-column: column;
+  --secondary: #81E6B6;
 }
+
 /* needs so much css work honestly not even sure if I am in good starting point
   but for now working on the nav
   the headings need help color gradient might be too much
@@ -26,7 +30,10 @@ html {
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-size: 62.5%;
 }
-*, *::after, *::before {
+
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -38,7 +45,10 @@ body {
   line-height: 1.5;
   background: var(--white);
   font-weight: 500;
+}
 
+a {
+  color: var(--cool-blue);
 }
 
 .container {
@@ -66,8 +76,8 @@ body {
 
 .grid-row {
   display: grid;
-  grid-gap: 3rem;
-  padding: 1rem;
+  grid-gap: 6rem;
+  /* padding: 1rem; */
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
 }
 
@@ -80,15 +90,15 @@ body {
 
 .btn {
   text-decoration: none;
-  color: var(--white);
-  background-color: var(--hot-pink);
+  color: var(--dark-black);
+  background-color: var(--secondary);
   padding: 1rem .8rem;
   border-radius: var(--border-radius);
   text-align: center;
 }
 
 .btn:hover {
-  opacity: 0.6;
+  background-color: var(--medium-gray);
   transition: 0.1s ease all;
 }
 
@@ -102,30 +112,6 @@ body {
 
 /*About*/
 
-#about {
-  /* margin: 0 0 2rem; */
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0;
-  line-height: 30px;
-  font-size: 17px;
-  letter-spacing: 2px;
-  font-weight: 300;
-  color: #777;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-intro h3 {
-  background-color: inherit;
-  text-align: center;
-  color: var(--royal-blue);
-  padding: .5rem;
-  
-}
-
 .about-intro {
   display: var(--flex);
   padding: 1rem;
@@ -138,7 +124,7 @@ body {
   max-width: 1200px;
 }
 
-.about-intro p {
+.about-intro {
   color: var(--rasin-black);
   padding: 1rem;
   text-align: center;
@@ -178,7 +164,7 @@ body {
 
 .icon {
   font-size: 5rem;
-  color: #000000;
+  color: var(--dark-black);
 }
 
 .icon:hover {
@@ -193,6 +179,7 @@ body {
 .second {
   margin-top: 2rem;
 }
+
 .center-form {
   display: var(--flex);
   justify-content: center;
@@ -211,7 +198,7 @@ body {
   flex-direction: var(--flex-column);
   justify-content: center;
   align-items: center;
-  
+
 }
 
 #default a:visited {
@@ -234,12 +221,12 @@ body {
   list-style-type: none;
   justify-content: space-evenly;
   background:
-  linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
-  linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
-  linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
-  linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
-  linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
-  linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, var(--rasin-black) 75%, var(--rasin-black));
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, var(--rasin-black) 75%, var(--rasin-black));
   background-color: #131313;
   background-size: 20px 20px;
   opacity: .93;
@@ -273,9 +260,10 @@ a {
 }
 
 .desk-nav li a {
-  color: var(--cool-blue);
+  color: var(--secondary);
   padding: .8rem 1.6rem;
 }
+
 ul li a:hover {
   background: #444;
   border-radius: var(--border-radius);
@@ -305,7 +293,7 @@ ul li a:hover {
 
 /* loader */
 #loader {
-  border: 1.6rem solid #000000;
+  border: 1.6rem solid var(--dark-black);
   border-radius: 50%;
   border-top: 1.6rem solid #56a5eb;
   width: 12rem;
@@ -328,25 +316,27 @@ ul li a:hover {
   from {
     transform: translateX(-100%);
   }
+
   to {
     transform: translateX(0);
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 75em) {
   .wrapper {
     padding: 1rem;
   }
 }
 
 /* figure out the toggle with state and make a function to display stuff think vstda */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 43.75em) {
   .fas {
     display: block;
     position: fixed;
     z-index: 999;
     transition: ease;
   }
+
   .fas.fa-bars {
     display: block;
     position: fixed;
@@ -356,7 +346,7 @@ ul li a:hover {
     height: 65px;
   }
 
-  .desk-nav li  {
+  .desk-nav li {
     display: none;
   }
 
@@ -381,22 +371,22 @@ ul li a:hover {
     width: 100%;
     transition: transform 0.3s ease-in-out;
     background:
-    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
-    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
-    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
-    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
-    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
-    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, var(--rasin-black) 75%, var(--rasin-black));
+      linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+      linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+      linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+      linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+      linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+      linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, var(--rasin-black) 75%, var(--rasin-black));
     background-color: #131313;
     background-size: 20px 20px;
     animation: slideIn 0.3s ease-in-out;
   }
-  
+
   .top-nav li {
-  font-size: 1.1em;
-  min-height: 50px;
-  padding: .5rem;
-  text-decoration: none;
+    font-size: 1.1em;
+    min-height: 50px;
+    padding: .5rem;
+    text-decoration: none;
   }
 
   .top-nav li {
@@ -420,12 +410,13 @@ ul li a:hover {
     border-radius: var(--border-radius);
     white-space: nowrap;
   }
+
   .project {
     margin: 5px;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 25em) {
   .grid-row {
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   }
@@ -467,7 +458,7 @@ ul li a:hover {
 }
 
 .loading .loader {
-  border: 1.6rem solid #000000;
+  border: 1.6rem solid var(--dark-black);
   border-radius: 50%;
   border-top: 1.6rem solid #56a5eb;
   width: 12rem;

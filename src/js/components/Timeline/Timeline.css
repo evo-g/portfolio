@@ -26,6 +26,10 @@
   z-index: 10;
 }
 
+.timeline-title {
+  color: var(--secondary-black)
+}
+
 /* .timeline-item:nth-child(odd) {
   align-self: flex-end;
   justify-content: flex-start;
@@ -42,7 +46,7 @@
   align-items: flex-end;
   padding: 15px;
   position: relative;
-  text-align: right;
+  /* text-align: right; */
   width: 100%;
 }
 
@@ -91,7 +95,7 @@
   font-size: 16px;
   line-height: 24px;
   margin: 15px 0;
-  max-width: 95%;
+  /* max-width: 95%; */
 }
 
 .timeline-item-content a {
@@ -125,7 +129,7 @@ br {
   display: none;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 56.25em) {
   br {
     display: block;
   }

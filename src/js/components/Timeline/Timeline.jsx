@@ -25,7 +25,7 @@ const TimelineItem = ({ data }) => (
       </span>
       <br />
       <time>{data.dateRange}</time>
-      <h3>{data.titleCard}</h3>
+      <h3 className='timeline-title'>{data.titleCard}</h3>
       <p>{data.info}</p>
       {data.contact && (
         <a

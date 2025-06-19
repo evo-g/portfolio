@@ -14,7 +14,7 @@
 }
 
 .card-child strong {
-  color: var(--royal-blue);
+  color: var(--hot-pink);
   /* filter: drop-shadow(1px 1px 1px var(--teal)); */
 }
 
@@ -24,6 +24,12 @@
   object-fit: contain;
   padding: 2rem;
 }
+
+  .button-container {
+    /* display: var(--flex);
+    justify-content: end; */
+    padding: 2rem 2rem 2rem 0;
+  }
 
 @media screen and (max-width: 779px) {
   .hero {
@@ -56,9 +62,7 @@
     position: relative;
     z-index: 99;
   }
-  .card-child p {
-    /* color: var(--light-gray); */
-  }
+
   .card-child strong {
     color: var(--hot-pink);
   }
@@ -68,6 +72,6 @@
   .button-container {
     display: var(--flex);
     justify-content: end;
-    padding: 0 2rem;
+    padding: 2rem;
   }
 }
