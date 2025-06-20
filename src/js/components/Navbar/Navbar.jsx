@@ -43,7 +43,7 @@ function Navbar() {
           :
           <Fragment>
             <span className='navbar-toggle' open={open} onClick={toggleOpen}>
-              <i className="fas fa-window-close"></i>
+              <i className='fas fa-window-close'></i>
             </span>
             <ul className='top-nav'>
               <li>

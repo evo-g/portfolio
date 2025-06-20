@@ -9,6 +9,7 @@ const GET_PORJECTS = gql`
       href
       codeHref
       stack
+      publishedAt
       image {
         url
       }

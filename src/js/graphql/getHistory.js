@@ -9,6 +9,7 @@ const GET_HISTORY = gql`
       historyType
       info
       id
+      publishedAt
     }
   }
 `;

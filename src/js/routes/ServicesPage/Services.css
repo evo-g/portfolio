@@ -52,6 +52,10 @@
 	color: #fff;
   cursor: pointer;
 }
+.tabs:hover h2 {
+  background-color: var(--secondary);
+}
+
 .active.tabs h2 {
 	border-bottom: .5rem solid var(--teal);
 	background-color: var(--light-gray);
@@ -73,6 +77,14 @@
   background-color: var(--teal);
   padding: 1rem;
   border-radius: var(--border-radius);
+}
+
+.service-card:hover {
+  background-color: var(--medium-gray);
+}
+
+.service-card h3 {
+  color: var(--secondary-black);
 }
 
 .service-card p {

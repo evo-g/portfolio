@@ -16,10 +16,14 @@ function Projects() {
     return <Loading />;
   }
 
+  const sortedProjects = [...projects].sort((a, b) =>
+    new Date(b.publishedAt) - new Date(a.publishedAt)
+  );
+
   return (
     <Fragment>
       {
-        projects.map(project => (
+        sortedProjects.map(project => (
           <div className='project' key={project.id}>
             <div className='info-container'>
               <h3>{project.name}</h3>

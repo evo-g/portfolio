@@ -43,7 +43,7 @@ function ServicePage() {
   }
 
   return (
-    <div className="page-container" id="services">
+    <div className='page-container' id='services'>
       <div className='tab-container'>
         <ul className='tab-nav'>
           <li className={`${active === 1 ? 'active' : ''} tabs`} onClick={() => setActiveTab(1)}>
@@ -71,12 +71,3 @@ function ServicePage() {
 }
 
 export default ServicePage;
-
-
-{/* <div className=''>
-  <i className="fab fa-html5"></i>
-  <i className="fab fa-css3-alt"></i>
-  <i className="fab fa-js"></i>
-  <i className="fab fa-node"></i>
-  <i className="fab fa-react"></i>
-</div> */}

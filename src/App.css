@@ -112,7 +112,7 @@ a {
 
 /*About*/
 
-.about-intro {
+.about-intro, .about-outro {
   display: var(--flex);
   padding: 1rem;
   color: var(--rasin-black);
@@ -122,12 +122,13 @@ a {
   align-items: center;
   text-align: center;
   max-width: 1200px;
-}
-
-.about-intro {
   color: var(--rasin-black);
   padding: 1rem;
   text-align: center;
+}
+
+.about-outro {
+  margin-top: 5rem;
 }
 
 .in-touch {

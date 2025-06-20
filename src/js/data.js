@@ -19,13 +19,13 @@ function findStartDate(startDate) {
   if (years > 0) {
     return `${years} years`
   } else if (days > 0) {
-    return days + " day(s) ago";
+    return `${days} day(s) ago`;
   } else if (hours > 0) {
-    return hours + " hour(s) ago";
+    return `${hours} hour(s) ago`;
   } else if (minutes > 0) {
-    return minutes + " minute(s) ago";
+    return `${minutes} minute(s) ago`;
   } else {
-    return "Just now";
+    return 'Just now';
   }
 }
 
